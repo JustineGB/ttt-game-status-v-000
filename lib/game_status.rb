@@ -63,8 +63,7 @@ end
 
  def winner(board)
    #if X or O won..WIN_COMBINATIONS[]
-   WIN_COMBINATIONS do |value, index|
-     if WIN_COMBINATIONS[index]. all? {|move| board.moves.include?(move)}
+     if won?.any do |move|
     puts "#{win_combination}"
    else !won?(board)
      puts nil

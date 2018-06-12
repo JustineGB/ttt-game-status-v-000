@@ -42,7 +42,6 @@ def full?(board)
 end
 
 def draw?(board)
-  draw?.each do |used|
   if full?(board) && !won?(board)
     return true
       #board is full and no won = draw

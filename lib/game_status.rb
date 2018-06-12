@@ -17,7 +17,7 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combination|
+winning_moves.each do |win_combination|
 
     win_index_1 = win_combination[0] #012
     win_index_2 = win_combination[1] #345

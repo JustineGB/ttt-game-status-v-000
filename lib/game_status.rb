@@ -40,6 +40,7 @@ def full?(board)
     return true
 end
 end
+end
 
 def draw?(board)
   draw?.each do |used|

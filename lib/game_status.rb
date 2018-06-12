@@ -36,12 +36,6 @@ WIN_COMBINATIONS.each do |win_combination|
 end
 
 def full?(board)
-  board.all? do |move|
-    move == "X" || move == "O"
-  end
-end
-
-def full?(board)
  if !(board.any?{|i| i == " "})
    return true
  else
@@ -58,6 +52,15 @@ def draw?(board)
     return false
   end
 end
+
+def draw?(board)
+  if full?(board) && !(won?(board))
+    return true 
+  else 
+    return false 
+  end 
+end 
+
 
 
 def over?(board)

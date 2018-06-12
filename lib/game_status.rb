@@ -16,23 +16,22 @@ WIN_COMBINATIONS = [
   [2, 4, 6] #7 diagonal right
 ]
 
-
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
 
-      win_index_1 = win_combination[0] #012
-      win_index_2 = win_combination[1] #345
-      win_index_3 = win_combination[2] #678
+    win_index_1 = win_combination[0] #012
+    win_index_2 = win_combination[1] #345
+    win_index_3 = win_combination[2] #678
 
-      position_1 = board[win_index_1] #equals the board index of 012
-      position_2 = board[win_index_2] #equals the board index of 345
-      position_3 = board[win_index_3] #equals the board index of 678 (so all 'squares' of the board are covered with these lines)
+    position_1 = board[win_index_1] #equals the board index of 012
+    position_2 = board[win_index_2] #equals the board index of 345
+    position_3 = board[win_index_3] #equals the board index of 678 (so all 'squares' of the board are covered with these lines)
 
-    if position_1 == "X" && position_2 == "X" && position_3 == "X" || position_1 =="O" && position_2 == "O" && position_3 == "O"
+  if position_1 == "X" && position_2 == "X" && position_3 == "X" || position_1 =="O" && position_2 == "O" && position_3 == "O"
      return win_combination
-   else
+  else
      return false
-   end
+  end
  end
 end
 

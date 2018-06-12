@@ -45,10 +45,10 @@ def full?(array)
  if !(array.any?{|i| i == " "})
    puts "the board is full!"
    return true
- else 
+ else
    puts "the board is not yet full"
    return false
- end 
+ end
 end 
 
 def draw?(board)

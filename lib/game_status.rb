@@ -44,7 +44,7 @@ def full?(board)
 end
 
 def draw?(board)
-  if full?(board) && !won?(board)
+  if full?(board) && !(won?(board))
     return true
       #board is full and no won = draw
     else !full?(board) && !won?(board) || !won?(board)
@@ -52,9 +52,6 @@ def draw?(board)
     return false
   end
 end
-
-
-
 
 def over?(board)
   #call on draw?, full?, and won? All will return FALSE unless the game is not yet over

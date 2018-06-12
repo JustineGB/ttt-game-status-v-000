@@ -13,7 +13,7 @@ WIN_COMBINATIONS = [
   [1, 4, 7], #4  middle column
   [2, 5, 8], #5 right column
   [0, 4, 8], #6 diagonal left
-  [2, 4, 6] #7 diagonal right 
+  [2, 4, 6] #7 diagonal right
 ]
 
 

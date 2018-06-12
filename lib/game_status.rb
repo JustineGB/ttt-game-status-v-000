@@ -37,7 +37,7 @@ def won?(board)
 end
 
 def full?(board)
-    if board.all? do |move|
+    if position_taken?.all? do |move|
       move == "X" || move == "O"
     end
     else

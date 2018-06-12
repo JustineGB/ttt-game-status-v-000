@@ -33,6 +33,7 @@ def won?(board)
     else
       false
   end
+    position_taken?.none? do |win_combination|
  end
 end
 

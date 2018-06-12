@@ -36,12 +36,8 @@ def won?(board)
 end
 
 def full?(board)
-  if position_taken?(board, index).all do |empty|
+  position_taken?(board, index).all do |empty|
     return true
-  else
-    return false
-end
-end
 end
 end
 

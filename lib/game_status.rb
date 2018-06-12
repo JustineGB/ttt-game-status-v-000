@@ -36,10 +36,9 @@ def won?(board)
 end
 
 def full?(board)
-  position_taken?(board, index).all do |empty|
-    return true
-end
-end
+  board.all? do |move|
+    move == "X" || move == "O"
+  end
 end
 
 def draw?(board)

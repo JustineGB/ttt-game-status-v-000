@@ -36,7 +36,7 @@ def won?(board)
 end
 
 def full?(board)
-  if board.all? do |move|
+  board.all? do |move|
     move == "X" || move == "O"
   end
 end

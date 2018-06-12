@@ -47,19 +47,12 @@ def draw?(board)
   if full?(board) && !won?(board)
     return true
       #board is full and no won = draw
-    elsif !full?(board) && !won?(board) || !won?(board)
+    else !full?(board) && !won?(board) || !won?(board)
       #board = status won (regardless of whether it is full or not)
     return false
   end
 end
 
-def draw?(board)
-  if full?(board) && !(won?(board))
-    return true
-  else
-    return false
-  end
-end 
 
 
 

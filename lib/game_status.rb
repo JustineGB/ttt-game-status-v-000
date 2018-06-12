@@ -29,13 +29,9 @@ def won?(board)
 
   if position_1 == "X" && position_2 == "X" && position_3 == "X" || position_1 =="O" && position_2 == "O" && position_3 == "O"
      return win_combination
-  elsif !position_taken?(board, index)
-    else
-      false
+  else
+    false
   end
-    position_taken?.none? do |win_combination|
- end
-end
 end
 
 def full?(board)

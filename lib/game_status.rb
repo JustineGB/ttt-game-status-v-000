@@ -31,7 +31,7 @@ WIN_COMBINATIONS.each do |win_combination|
      return win_combination
   else
     false
-    end
+  
     !(won?(board))
     return false
   end

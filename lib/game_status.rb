@@ -39,9 +39,9 @@ end
 def full?(board)
     if board.all? do |move|
       move == "X" || move == "O"
+    end
     else
       false
-    end
   end
 end
 

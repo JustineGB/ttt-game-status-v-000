@@ -41,7 +41,7 @@ def full?(board)
   end
 end
 
-def full?(array)
+def full?(board)
  if !(array.any?{|i| i == " "})
    return true
  else

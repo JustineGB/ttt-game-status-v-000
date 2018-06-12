@@ -5,7 +5,7 @@ end
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 
-WIN_COMBINATIONS = [
+@winning_moves = [
   [0, 1, 2], #0 top row win
   [3, 4, 5], #1 middle row win
   [6, 7, 8], #2 bottom row win

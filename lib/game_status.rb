@@ -32,7 +32,10 @@ WIN_COMBINATIONS.each do |win_combination|
   else
     false
     end
+    !(won?(board))
+    return false
   end
+end
 end
 
 def full?(board)

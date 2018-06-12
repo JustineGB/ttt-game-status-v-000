@@ -35,11 +35,13 @@ def won?(board)
   end
 end
 
-
 def full?(board)
-  board.all? do |move|
-    move == "X" || move == "O"
-  end
+  if position_taken?(board, index).all do |empty|
+    return true
+  else 
+    return false 
+end
+end
 end
 
 def draw?(board)

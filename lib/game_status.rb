@@ -54,10 +54,7 @@ def draw?(board)
 end
 
 def over?(board)
-  #call on draw?, full?, and won? All will return FALSE unless the game is not yet over
-  if full?(board) && !(won?(board)) || draw?(board)
-    return true
-  elsif !(full?(board)) && won?(board)
+  if full?(board) || !(won?(board)) || draw?(board) || won?(board)
     return true
   else
     return false

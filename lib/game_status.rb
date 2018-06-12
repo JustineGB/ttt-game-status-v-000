@@ -63,7 +63,8 @@ end
 
  def winner(board)
    #if X or O won..WIN_COMBINATIONS[]
-     if won?[index].any? {|move| puts "#{win_combination}"}
-end
+   if won?(board)
+     puts "X"
+   elsif !won?(board)
 end
 end

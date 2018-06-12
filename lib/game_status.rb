@@ -20,9 +20,9 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
 
-      win_index_1 = WIN_COMBINATIONS[0] #012
-      win_index_2 = WIN_COMBINATIONS[1] #345
-      win_index_3 = WIN_COMBINATIONS[2] #678
+      win_index_1 = win_combination[0] #012
+      win_index_2 = win_combination[1] #345
+      win_index_3 = win_combination[2] #678
 
       position_1 = board[win_index_1] #equals the board index of 012
       position_2 = board[win_index_2] #equals the board index of 345

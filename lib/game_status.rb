@@ -36,6 +36,7 @@ def won?(board)
     position_taken?.none? do |win_combination|
  end
 end
+end
 
 def full?(board)
   board.all? do |move|

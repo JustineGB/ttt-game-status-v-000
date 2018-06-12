@@ -63,7 +63,7 @@ end
 
  def winner(board)
    #if X or O won..WIN_COMBINATIONS[]
-   if won?(board)
+   if win_combination.includes "X"
      puts "X"
    elsif !won?(board)
 end

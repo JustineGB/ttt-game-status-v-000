@@ -55,12 +55,20 @@ end
 
 def over?(board)
   #call on draw?, full?, and won? All will return FALSE unless the game is not yet over
-  if full?(board) && won?(board) && draw?(board) == true
+  if full?(board) || !(won?(board)) || draw?(board) 
     return true
   else
     return false
   end
 end
+
+def over?(array3)
+  if full?(array3) || !(won?(array3)) || draw?(array3)
+        return true
+  else 
+        return false 
+  end 
+end 
 
  def winner(board)
    #if X or O won..WIN_COMBINATIONS[]

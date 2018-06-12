@@ -54,7 +54,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if full?(board) || !(won?(board)) || draw?(board) || won?(board) || !(full?(board))
+  if full?(board) || !(won?(board)) || draw?(board) || won?(board)
     return true
   else
     return false
@@ -64,7 +64,7 @@ end
 def winner(board)
   if winning_combo = won?(board)
     board[winning_combo.first]
-  else !(won?(board))
+  else
     return false
   end
 end
